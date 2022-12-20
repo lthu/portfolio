@@ -1,0 +1,48 @@
+
+
+
+<div class="container-fluid">
+
+    <div class="row">
+        <h2>Projektit</h2>        
+            <p class="text">Tältä sivulta saat tietoa projekteista, joiden parissa olen puuhaillut ja muista mielenkiinnon kohteistani.</p>
+    </div>
+<!--[ngClass]="{highlightedButton: (booleanTest) ? true : false}"
+class="btn btn-primary"-->
+
+    <div class="row">
+        <div class="col-sm-6">
+            <li *ngFor="let project of projects, index as i">
+                <button
+                (click)="onSelect(project, i)"
+                type="button"
+                id="{{i}}"
+                class="btn btn-primary"
+                [ngClass]="{'active':buttonStates[i]==true}"
+                >
+                {{project.name}}
+                </button>
+            </li>
+        </div>
+
+        <div class="col-sm-6"></div>
+    </div>
+</div>
+    
+<hr> <!--FIX-->
+
+<div *ngIf="selectedProject">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-sm-4">
+                    <p>{{selectedProject.description}}</p>
+                </div>
+            <div class="col-sm-8" >
+                <p *ngFor="let image of selectedProject.images" class="image">
+                    <img src="assets/{{image.name}}" class="img-thumbnail"> <br/>
+                    <span class="altText">{{image.altText}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

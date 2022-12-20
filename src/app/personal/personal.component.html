@@ -1,0 +1,21 @@
+<div class="container-fluid aboutContent">
+<h2>Tietoa minusta</h2>
+    <p class="text">Olen 32-vuotias tieto- ja viestintätekniikan opiskelija ja asun Kuusamossa.</p>
+
+
+    
+<div class="row">
+    <div class="col-sm-4">
+      <p>Harrastuksiani ovat mm. 
+          <a class="hoverLinks" (click)="onSelect(0)" >pyöräily</a>, 
+          <a class="hoverLinks" (click)="onSelect(1)" >lumikenkäily</a> ja 
+          <a class="hoverLinks">lukeminen</a>
+      </p>
+    </div>
+    <div class="col-sm-8">
+        <p class="image">
+            <img src="assets/{{selectedImage}}" class="img-thumbnail" width="50%" height="50%">
+        </p>
+    </div>
+  </div>
+</div>

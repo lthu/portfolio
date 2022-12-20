@@ -1,0 +1,30 @@
+
+<!--<ul ngbNav [(activeId)]="route.fragment" class="nav-tabs shadow-sm p-3 mb-4 bg-body">
+	<li [ngbNavItem]="link.fragment" *ngFor="let link of links">
+		<a class="linkki" ngbNavLink routerLink="{{link.fragment}}">{{ link.title }}</a>
+	</li>
+</ul>-->
+<div class="shadow-sm p-3 mb-4">
+	<nav>
+		<a class="button"
+		routerLink="/about/personal"
+		routerLinkActive="activebutton"
+		ariaCurrentWhenActive="page">
+		Tietoa
+		</a>
+		<a class="button"
+		routerLink="/projects"
+		routerLinkActive="activebutton"
+		ariaCurrentWhenActive="page">
+		Projektit
+		</a>
+		<a class="button"
+		routerLink="/contact"
+		routerLinkActive="activebutton"
+		ariaCurrentWhenActive="page">
+		Yhteydenotto
+		</a>
+	</nav>
+</div>
+
+<router-outlet></router-outlet>
