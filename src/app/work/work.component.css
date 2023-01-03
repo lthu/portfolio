@@ -4,4 +4,17 @@
  }
  .workTitle {
     font-weight: bold;
+    
+    border-left: 6px solid grey;
+ }
+ .workEntry {
+    
+    width: 40%;
+    border-width: max(1px, 0.1em);
+    border-color: rgb(116, 114, 114);
+    box-shadow: inset 5px;
+    border-radius: 5px;
+    padding: 5px;
+    
+    margin-top: 5px;
  }
