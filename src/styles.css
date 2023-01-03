@@ -15,8 +15,7 @@ body {
 }
 .image {
     margin-bottom: 20px;
-    
-    
+
 }
 .hoverLinks {
     text-decoration-style: dotted;
@@ -46,3 +45,7 @@ li button {
 .active {
     color: rgb(97, 59, 2) !important;
 }
+img {
+    width: 50%;
+}
+
