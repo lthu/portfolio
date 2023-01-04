@@ -1,0 +1,21 @@
+li {
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+}
+li button {
+    background-color: #e99312;
+    border-color: #e99312 #e99312 #e99312 #e99312;
+    
+    color: black;
+    
+}
+.active {
+    background-color: #e7b973 !important;
+    border-color: #e7b973 !important;
+    
+}
+.altText{
+    color: #c08539;
+    
+}

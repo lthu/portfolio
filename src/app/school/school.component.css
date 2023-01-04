@@ -5,16 +5,16 @@
  .schoolTitle {
     font-weight: bold;
     padding-left: 5px;
-    border-left: 6px solid green;
+    border-left: 6px solid #7e3301;
  }
  .schoolEntry {
     
     width: 100%;
     border-width: 0 0 max(1px, 0.1em) 0;
-    border-color: rgb(127, 126, 126);
+    border-color: rgb(57, 76, 104);
     border-style: solid;
     border-radius: 5px;
     padding: 15px;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(10, 17, 27);
     margin-top: 5px;
  }

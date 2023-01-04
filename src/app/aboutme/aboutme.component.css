@@ -4,26 +4,27 @@
 }
 
 .aboutMeBtn {
-    box-shadow: inset 0 1px 0 0 #dcecfb;
-    background: #ffffff linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-    border-radius: 1px;
-    border: 1px solid #dcdcdc;
+    box-shadow: inset 0 1px 0 0 #21395f;
+    /*background: #ffffff linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);*/
+    background-color: #15233b;
+    border: 1px solid #181717;
     display: inline-block;
     cursor: pointer;
-    color: #f38c05;
+    color: #c08639;
     font-family: Arial, sans-serif;
     font-size: 15px;
     font-weight: bold;
     padding: 5px 15px;
-    margin-left: 10px;
+    margin-left: 15px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #ffffff;
-    outline: 0;
+    text-shadow: 0 1px 0 #080808;
+    
 }
 .activebutton {
-    color: rgb(255, 255, 255) !important;
-    background: rgb(238, 174, 12) !important;
-    text-shadow: 0 0px 0 #ffffff !important;
-    font-weight: bold;
-    
+    box-shadow: inset 0 1px 0 0 #21395f;
+   /* background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);*/
+   background: #21395f linear-gradient(to bottom, #21395f 5%, #21395f 100%);
+    border: 1px solid #181717;
+    color: #f38c05;
+    text-shadow: 0 1px 0 #080808;
 }

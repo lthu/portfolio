@@ -5,6 +5,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css']
   
 	
 })
