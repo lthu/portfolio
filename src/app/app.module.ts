@@ -11,6 +11,7 @@ import { WorkComponent } from './work/work.component';
 import { SchoolComponent } from './school/school.component';
 import { PersonalComponent } from './personal/personal.component';
 import { ContactComponent } from './contact/contact.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -35,12 +36,11 @@ import { ContactComponent } from './contact/contact.component';
         {path: 'school', component: SchoolComponent},
       ] },
       {path: 'projects', component: ProjectsComponent},
-      {path: 'contact', component: ContactComponent},
       {path: '**', redirectTo: 'about/personal'}
     ]),
     NgbModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
