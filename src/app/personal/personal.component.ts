@@ -9,7 +9,7 @@ export class PersonalComponent implements OnInit {
   selectedImage: string;
 
   ngOnInit(): void {
-    var rand = Math.floor(Math.random() * 5);
+    var rand = Math.floor(Math.random() * 4);
     this.selectedImage = this.lauriKuvat[rand].name;
   }
   returnRandom(rand: number) : number {
@@ -37,6 +37,6 @@ export class PersonalComponent implements OnInit {
   retkeilyKuvat: AboutImage[] = [{id: 1, name: 'retkeily1.jpg' }];
   lumikenkaKuvat: AboutImage[] = [{id: 1, name: 'lumikenka.jpg' }, {id : 2, name: 'lumikenka2.jpg'} ];
   pyoraKuvat: AboutImage[] = [{id: 1, name: 'pyor1.jpg' }, {id : 2, name: 'pyor2.jpg'}, {id : 3, name: 'pyor3.jpg'}, {id : 4, name: 'pyor4.jpg'}, {id : 5, name: 'pyor5.jpg'} ];
-  lauriKuvat: AboutImage[] = [{id: 1, name: 'prof1.jpg' }, {id : 2, name: 'prof2.jpg'}, {id : 3, name: 'prof3.jpg'}, {id : 3, name: 'prof3.jpg'}, {id : 4, name: 'prof4.jpg'}, {id : 5, name: 'prof5.jpg'}, {id : 6, name: 'lauri6.jpg'}, {id : 7, name: 'lauri7.jpg'}, {id : 8, name: 'lauri8.jpg'}, {id : 9, name: 'lauri9.jpg'} ];
+  lauriKuvat: AboutImage[] = [{id: 1, name: 'profiili1.jpg' }, {id : 2, name: 'profiili2.jpg'}, {id : 3, name: 'profiili3.jpg'}, {id : 4, name: 'profiili4.jpg'}];
   
 }

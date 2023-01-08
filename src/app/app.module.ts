@@ -36,7 +36,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
         {path: 'school', component: SchoolComponent},
       ] },
       {path: 'projects', component: ProjectsComponent},
-      {path: '**', redirectTo: 'about/personal'}
+      {path: '**', redirectTo: 'about/personal'},
+      
+      
     ]),
     NgbModule
   ],
